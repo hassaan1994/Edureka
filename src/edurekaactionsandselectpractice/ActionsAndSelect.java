@@ -18,7 +18,7 @@ public class ActionsAndSelect {
     @Test
     public void AAndSPractice() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\hassa\\OneDrive\\Desktop\\SeleniumCourse\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\hassa\\OneDrive\\Desktop\\SeleniumCourse\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
 
@@ -29,9 +29,9 @@ public class ActionsAndSelect {
         driver.get("https://www.facebook.com/");
         Thread.sleep(2000);
         Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.linkText("Create New Account")));
+        action.moveToElement(driver.findElement(By.partialLinkText("Create new accou")));
         action.click().build().perform();
-        action.moveToElement(driver.findElement(By.name("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")));
+        action.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]")));
         action.click().sendKeys("Hassaan").build().perform();
         Thread.sleep(2000);
         System.out.println("First Phase");

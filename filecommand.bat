@@ -1,0 +1,1 @@
+java -cp C:\Users\hassa\IdeaProjects\Edureka\out\production\Edureka;C:\Users\hassa\OneDrive\Desktop\SeleniumCourse\Libraries\* org.testng.TestNG testng.xml
